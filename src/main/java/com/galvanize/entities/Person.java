@@ -10,15 +10,15 @@ import java.util.Date;
 public class Person {
     private String name;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "MM/dd/yyyy")
     private Date birthDate;
 
     private String email;
 
     public Person(String name, Date birthDate, String email) {
-        this.name = name;
-        this.birthDate = birthDate;
-        this.email = email;
+        setName(name);
+        setBirthDate(birthDate);
+        setEmail(email);
     }
 
     public String getName() {
